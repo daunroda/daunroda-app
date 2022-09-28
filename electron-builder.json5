@@ -1,0 +1,41 @@
+/**
+ * @see https://www.electron.build/configuration/configuration
+ */
+{
+  appId: "com.daunroda.app",
+  productName: "Daunroda",
+  copyright: "Copyright © 2022 Daunroda",
+  asar: true,
+  directories: {
+    output: "release/${version}",
+  },
+  files: ["dist"],
+  mac: {
+    artifactName: "${productName}_${version}.${ext}",
+    target: ["dmg"],
+  },
+  win: {
+    target: [
+      {
+        target: "nsis",
+        arch: ["x64", "ia32"],
+      },
+    ],
+    artifactName: "${productName}_${version}.${ext}",
+  },
+  linux: {
+    target: [
+      {
+        target: "AppImage",
+        arch: ["x64", "ia32", "arm64"],
+      },
+    ],
+    artifactName: "${productName}_${version}.${ext}",
+  },
+  nsis: {
+    oneClick: false,
+    perMachine: false,
+    allowToChangeInstallationDirectory: true,
+    deleteAppDataOnUninstall: false,
+  },
+}
