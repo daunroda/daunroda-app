@@ -1375,7 +1375,7 @@ __metadata:
     "@types/spotify-api": ^0.0.18
     "@types/spotify-web-api-node": ^5.0.7
     "@vitejs/plugin-vue": ^3.1.0
-    daunroda: "https://github.com/daunroda/daunroda-app-package#e276f2e6b1ec55b20314aecc10b33e561cde46e5"
+    daunroda: "https://github.com/daunroda/daunroda-app-package.git#commit=973730d73e26fb584f9c7256e1cc6fcb205dc218"
     electron: ^20.2.0
     electron-builder: ^23.5.1
     fluent-ffmpeg: "https://github.com/alexthemaster/node-fluent-ffmpeg"
@@ -1389,9 +1389,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"daunroda@https://github.com/daunroda/daunroda-app-package#e276f2e6b1ec55b20314aecc10b33e561cde46e5":
+"daunroda@https://github.com/daunroda/daunroda-app-package.git#commit=973730d73e26fb584f9c7256e1cc6fcb205dc218":
   version: 1.1.2
-  resolution: "daunroda@https://github.com/daunroda/daunroda-app-package.git#commit=e276f2e6b1ec55b20314aecc10b33e561cde46e5"
+  resolution: "daunroda@https://github.com/daunroda/daunroda-app-package.git#commit=973730d73e26fb584f9c7256e1cc6fcb205dc218"
   dependencies:
     "@sapphire/stopwatch": ^1.4.1
     "@skyra/jaro-winkler": ^1.1.0
@@ -1402,7 +1402,7 @@ __metadata:
     undici: ^5.10.0
     youtubei.js: ^2.2.1
     ytdl-core: ^4.11.2
-  checksum: 6ef52abe33969812d840b12e9d6561499345322d0ed0679068c9a9f9d787cffb5481e9efb1909499a10ee69554b2401e4c409c0e8d7aeefa7770f9ed12ecd22d
+  checksum: 20dc6a9e49f6816b352c53ec49a923c7aea49c4ea04d724cfbf49e02ae461c13f399aacfba3e579775eab66d7f9cc6d88aa376a4f65b1629317a3a48db9db12e
   languageName: node
   linkType: hard
 
