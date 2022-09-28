@@ -42,10 +42,13 @@
         </div>
     </div>
 
-    <router-link to="/" class="button is-primary">
-        <font-awesome-icon class="icon" icon="fa-solid fa-house" />
-        Go home
-    </router-link>
+    <div :hidden="Array.from(progress.values()).some(prog => !prog.finished)">
+        <router-link to="/" class="button is-primary">
+            <font-awesome-icon class="icon" icon="fa-solid fa-house" />
+            Go home
+        </router-link>
+    </div>
+
 </template>
 
 <script lang="ts">
