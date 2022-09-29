@@ -48,7 +48,7 @@ jobs:
       - name: Remove unpacked folders
         run: rm -rf release/*/**-unpacked
       - name: Upload artifact to GitHub
-      - uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v3
         with:
           name: Daunroda-${{ matrix.os }}
           path: release
