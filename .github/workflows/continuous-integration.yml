@@ -45,6 +45,8 @@ jobs:
         run: yarn 
       - name: Build app
         run: yarn build
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Remove unpacked folders
         run: rm -rf release/*/**-unpacked
       - name: Upload artifact to GitHub
