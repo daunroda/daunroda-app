@@ -1,6 +1,11 @@
 <template>
   <div id="app" class="container content">
-    <img alt="Daunroda logo" src="./assets/logo.png" id="logo" />
+    <img
+      alt="Daunroda logo"
+      src="./assets/logo.png"
+      id="logo"
+      draggable="false"
+    />
     <router-view></router-view>
   </div>
   <FooterPage></FooterPage>
