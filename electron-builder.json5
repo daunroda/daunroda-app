@@ -12,7 +12,7 @@
   files: ["dist"],
   mac: {
     artifactName: "${productName}_${version}.${ext}",
-    target: [{ target: "dmg", arch: ["x64"] }],
+    target: [{ target: "dmg", arch: ["universal"] }],
   },
   win: {
     target: [
