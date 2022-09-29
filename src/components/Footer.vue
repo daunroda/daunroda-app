@@ -12,7 +12,7 @@
           GitHub
         </a>
       </p>
-      <a href="https://bulma.io">
+      <a @click="open('https://bulma.io')">
         <img
           src="https://bulma.io/images/made-with-bulma--dark.png"
           alt="Made with Bulma"
