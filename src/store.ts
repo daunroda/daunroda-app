@@ -19,8 +19,8 @@ export async function loadConfig() {
 
 export async function loginSpotify() {
   const client = new spotify({
-    clientId: store.config.spotifyClientID!,
-    clientSecret: store.config.spotifySecret!,
+    clientId: store.config.spotifyClientID,
+    clientSecret: store.config.spotifySecret,
   });
 
   const auth = `Basic ${Buffer.from(
