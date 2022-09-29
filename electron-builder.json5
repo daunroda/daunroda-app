@@ -12,13 +12,13 @@
   files: ["dist"],
   mac: {
     artifactName: "${productName}_${version}.${ext}",
-    target: ["dmg"],
+    target: [{ target: "dmg", arch: ["x64", "arm64"] }],
   },
   win: {
     target: [
       {
         target: "nsis",
-        arch: ["x64", "ia32"],
+        arch: ["x64", "ia32", "arm64"],
       },
     ],
     artifactName: "${productName}_${version}.${ext}",
@@ -28,7 +28,7 @@
     target: [
       {
         target: "AppImage",
-        arch: ["x64", "ia32", "arm64"],
+        arch: ["x64", "arm64", "armv7l"],
       },
     ],
     artifactName: "${productName}_${version}.${ext}",
