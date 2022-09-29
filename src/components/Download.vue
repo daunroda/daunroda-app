@@ -107,7 +107,6 @@ async function loadPlaylists() {
     while (next) {
         const {
             body: { items, next: nextURL }
-            // @ts-ignore
         } = await store.spotifyClient.getUserPlaylists(store.config.username, { offset });
         if (!nextURL) next = false;
         else if (nextURL) offset = Number(nextURL.split("offset=")[1].split("&")[0]);
