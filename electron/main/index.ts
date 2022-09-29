@@ -109,3 +109,7 @@ ipcMain.handle("download", (e, config) => {
 
   client.run().catch((err) => e.sender.send("error", err));
 });
+
+ipcMain.handle("version", () => {
+  return app.getVersion();
+});

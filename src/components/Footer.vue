@@ -11,6 +11,8 @@
           <font-awesome-icon icon="fa-brands fa-github" />
           GitHub
         </a>
+        <br />
+        {{ version }}
       </p>
       <a @click="open('https://bulma.io')">
         <img
@@ -25,16 +27,27 @@
 </template>
 
 <script lang="ts">
-import { shell } from "electron";
+import { defineComponent } from "@vue/runtime-core";
+import { ipcRenderer, shell } from "electron";
 
-export default {
+export default defineComponent({
   name: "FooterPage",
   methods: {
     open(url: string) {
       shell.openExternal(url);
     },
   },
-};
+  data() {
+    return {
+      version: "Loading version...",
+    };
+  },
+  beforeMount() {
+    ipcRenderer
+      .invoke("version")
+      .then((version) => (this.version = `v${version}`));
+  },
+});
 </script>
 
 <style>
