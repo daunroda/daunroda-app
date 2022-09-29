@@ -1,6 +1,6 @@
 {
   "name": "daunroda-app",
-  "version": "0.0.1-alpha.7",
+  "version": "0.0.1-alpha.8",
   "private": true,
   "description": "The official Daunroda app to easily download Spotify playlists.",
   "author": "Alex Kovacs <alexdemaster@proton.me>",
@@ -13,7 +13,7 @@
   "main": "dist/electron/main/index.js",
   "dependencies": {
     "@sapphire/fetch": "^2.4.1",
-    "daunroda": "https://github.com/daunroda/daunroda-app-package.git#commit=973730d73e26fb584f9c7256e1cc6fcb205dc218",
+    "daunroda": "https://github.com/daunroda/daunroda-app-package#7775c66116853de58d6a94a161cae137f878fe32",
     "electron-updater": "^5.2.1",
     "fluent-ffmpeg": "https://github.com/alexthemaster/node-fluent-ffmpeg.git#commit=86418dd02dfb9554ce2becaafda20c66447b0d84",
     "spotify-web-api-node": "^5.0.2"
