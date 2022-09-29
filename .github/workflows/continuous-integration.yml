@@ -30,7 +30,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
-    name: Compile app on ${{ matrix.os }}
+    name: Build app on ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout Project
@@ -47,6 +47,3 @@ jobs:
         run: yarn build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Remove unpacked folders
-        run: rm -rf release/*/**-unpacked
-        shell: bash
