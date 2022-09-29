@@ -16,9 +16,11 @@
         style="margin-right: 20px"
       />
       <img
-        :src="playlist.images[0]?.url || './src/assets/no_playlist.png'"
-        style="max-height: 50px"
+        v-if="playlist.images[0]"
+        :src="playlist.images[0].url"
+        draggable="false"
       />
+      <img v-else src="../assets/no_playlist.png" draggable="false" />
       {{ playlist.name }}
     </label>
   </div>
@@ -158,6 +160,20 @@ async function loadPlaylists() {
 <style>
 #info {
   white-space: pre-wrap;
+}
+
+.playlist {
+  padding: 10px;
+}
+
+input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+  clip-path: circle(40% at 50% 50%);
+}
+
+.playlist img {
+  max-height: 50px;
 }
 
 .button {
