@@ -16,7 +16,7 @@
         style="margin-right: 20px"
       />
       <img
-        :src="playlist.images[0]?.url || '/src/assets/no_playlist.png'"
+        :src="playlist.images[0]?.url || './src/assets/no_playlist.png'"
         style="max-height: 50px"
       />
       {{ playlist.name }}
