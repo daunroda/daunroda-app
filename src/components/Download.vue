@@ -166,9 +166,10 @@ async function loadPlaylists() {
   white-space: pre-wrap;
 }
 
-input[type="checkbox"] {
-  /* width: 25px;
-  height: 25px; */
+.playlist input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+  background: none;
   clip-path: circle(40% at 50% 50%);
 }
 
