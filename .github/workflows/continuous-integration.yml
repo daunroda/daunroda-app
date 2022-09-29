@@ -45,6 +45,8 @@ jobs:
         run: yarn --immutable
       - name: Build app
         run: yarn build
+      - name: Remove unpacked folders
+        run: rm -rf release/*/**-unpacked
       - name: Upload artifact to GitHub
       - uses: actions/upload-artifact@v3
         with:
