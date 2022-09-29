@@ -2,8 +2,9 @@
   <p class="title has-text-white">Hello, {{ store.config.username }}!</p>
   <br />
   <p class="subtitle has-text-white">
-    Select the playlists you want to download. (Don't see a playlist here? Make
-    sure that it's public!)
+    Select the playlists you want to download.
+    <br />
+    (Don't see a playlist here? Make sure that it's public!)
   </p>
 
   <div v-for="playlist in playlists" :key="playlist.name" class="playlist">
@@ -14,7 +15,10 @@
         v-model="download"
         style="margin-right: 20px"
       />
-      <img :src="playlist.images[0].url" style="max-height: 50px" />
+      <img
+        :src="playlist.images[0]?.url || '/src/assets/no_playlist.png'"
+        style="max-height: 50px"
+      />
       {{ playlist.name }}
     </label>
   </div>
@@ -72,7 +76,6 @@ import { ipcRenderer } from "electron";
 import { inspect } from "util";
 import type { StoreConfig } from "../store.js";
 import { loadConfig, store } from "../store.js";
-
 export default defineComponent({
   name: "DownloadPage",
   data(): {
