@@ -7,7 +7,11 @@
     (Don't see a playlist here? Make sure that it's public!)
   </p>
 
-  <div v-for="playlist in playlists" :key="playlist.name" class="playlist">
+  <div
+    v-for="playlist in playlists"
+    :key="playlist.name"
+    class="playlist subtitle has-text-white is-size-4"
+  >
     <label class="checkbox">
       <input
         type="checkbox"
@@ -162,18 +166,15 @@ async function loadPlaylists() {
   white-space: pre-wrap;
 }
 
-.playlist {
-  padding: 10px;
-}
-
 input[type="checkbox"] {
-  width: 25px;
-  height: 25px;
+  /* width: 25px;
+  height: 25px; */
   clip-path: circle(40% at 50% 50%);
 }
 
 .playlist img {
-  max-height: 50px;
+  max-height: 70px;
+  vertical-align: middle;
 }
 
 .button {
