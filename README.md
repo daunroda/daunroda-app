@@ -12,6 +12,7 @@ bullshit from YouTube (karaoke/instrumental versions, music video versions etc)
 - Spotify metadata embedded in files
 - Playlist file creation (.m3u8)
 - Concurrent music downloading from YouTube
+- Auto-updating
 
 ## Usage
 
