@@ -15,7 +15,7 @@ bullshit from YouTube (karaoke/instrumental versions, music video versions etc)
 
 ## Usage
 
-1. Windows: download executable for Windows from Releases tab 
+1. Downlaod the installer for your OS of choice from the Releases tab 
 1. Built it yourself: 
 * Install [Node.js](https://nodejs.org/) (v18.0.0 or newer) 
 * Clone this repository
