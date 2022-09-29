@@ -17,14 +17,14 @@ bullshit from YouTube (karaoke/instrumental versions, music video versions etc)
 ## Usage
 
 - Download the installer for your OS of choice from the Releases tab or from the following list
-  - [Windows 7+ (Multi-architecture)](https://github.com/daunroda/daunroda-app/releases/latest/download/Daunroda-v0.0.1-alpha.4-win.exe) (This download is larger than any specific architecture download - 251 MB!)
-  - [Windows 7+ (x86/32-bit)](https://github.com/daunroda/daunroda-app/releases/latest/download/Daunroda-v0.0.1-alpha.4-win-ia32.exe)
-  - [Windows 7+ (x64/64-bit)](https://github.com/daunroda/daunroda-app/releases/latest/download/Daunroda-v0.0.1-alpha.4-win-x64.exe)
-  - [Windows 10+ (ARM64)](https://github.com/daunroda/daunroda-app/releases/latest/download/Daunroda-v0.0.1-alpha.4-win-arm64.exe)
-  - [macOS 10.13+ (Universal 2 Binary)](https://github.com/daunroda/daunroda-app/releases/latest/download/Daunroda-v0.0.1-alpha.4-mac-universal.dmg)
-  - [Linux (x86_64)](https://github.com/daunroda/daunroda-app/releases/latest/download/Daunroda-v0.0.1-alpha.4-linux-x86_64.AppImage)
-  - [Linux (ARMv7)](https://github.com/daunroda/daunroda-app/releases/latest/download/Daunroda-v0.0.1-alpha.4-linux-armv7l.AppImage)
-  - [Linux (ARM64)](https://github.com/daunroda/daunroda-app/releases/latest/download/Daunroda-v0.0.1-alpha.4-linux-arm64.AppImage)
+  - [Windows 7+ (Multi-architecture)](https://github.com/daunroda/daunroda-app/releases/latest/download/Daunroda-v0.0.1-alpha.5-win.exe) (This download is larger than any specific architecture download - 251 MB!)
+  - [Windows 7+ (x86/32-bit)](https://github.com/daunroda/daunroda-app/releases/latest/download/Daunroda-v0.0.1-alpha.5-win-ia32.exe)
+  - [Windows 7+ (x64/64-bit)](https://github.com/daunroda/daunroda-app/releases/latest/download/Daunroda-v0.0.1-alpha.5-win-x64.exe)
+  - [Windows 10+ (ARM64)](https://github.com/daunroda/daunroda-app/releases/latest/download/Daunroda-v0.0.1-alpha.5-win-arm64.exe)
+  - [macOS 10.13+ (Universal 2 Binary)](https://github.com/daunroda/daunroda-app/releases/latest/download/Daunroda-v0.0.1-alpha.5-mac-universal.dmg)
+  - [Linux (x86_64)](https://github.com/daunroda/daunroda-app/releases/latest/download/Daunroda-v0.0.1-alpha.5-linux-x86_64.AppImage)
+  - [Linux (ARMv7)](https://github.com/daunroda/daunroda-app/releases/latest/download/Daunroda-v0.0.1-alpha.5-linux-armv7l.AppImage)
+  - [Linux (ARM64)](https://github.com/daunroda/daunroda-app/releases/latest/download/Daunroda-v0.0.1-alpha.5-linux-arm64.AppImage)
 
 OR
 
