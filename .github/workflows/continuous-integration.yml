@@ -49,6 +49,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Remove unpacked folders
         run: rm -rf release/*/**-unpacked
+        shell: bash
       - name: Upload artifact to GitHub
         uses: actions/upload-artifact@v3
         with:
