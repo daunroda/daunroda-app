@@ -151,7 +151,7 @@ export default defineComponent({
       if (
         (store.config.audioContainer == "mp3"
           ? !store.config.audioBitrate
-          : true) ||
+          : false) ||
         !store.config.audioContainer ||
         !store.config.difference ||
         !store.config.downloadTo ||
