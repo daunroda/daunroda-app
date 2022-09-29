@@ -24,6 +24,7 @@
     artifactName: "${productName}_${version}.${ext}",
   },
   linux: {
+    icon: "build/icon.png",
     target: [
       {
         target: "AppImage",
