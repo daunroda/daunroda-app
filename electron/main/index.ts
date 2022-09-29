@@ -16,6 +16,7 @@ process.env.PUBLIC = app.isPackaged
 
 import { Daunroda } from "daunroda";
 import { app, BrowserWindow, dialog, ipcMain } from "electron";
+import { autoUpdater } from "electron-updater";
 import { release } from "os";
 import { join } from "path";
 
@@ -62,7 +63,10 @@ async function createWindow() {
   }
 }
 
-app.on("ready", createWindow);
+app.on("ready", async () => {
+  await createWindow();
+  await autoUpdater.checkForUpdatesAndNotify();
+});
 
 app.on("window-all-closed", () => {
   win = null;
