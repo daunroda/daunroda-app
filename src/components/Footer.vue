@@ -2,17 +2,17 @@
   <footer class="footer">
     <div class="content has-text-centered has-text-white">
       <p>
-        Daunroda by
-        <a @click="open('https://github.com/alexthemaster')">Alex Kovacs</a>.
-        The source code is licensed under the
-        <a @click="open('https://choosealicense.com/licenses/mit/')">MIT</a>
-        license. This app's source code is available on
+        Daunroda {{ version }} by
+        <a @click="open('https://github.com/alexthemaster')">Alex Kovacs</a>
+        <br />
+        This app's source code is available on
         <a @click="open('https://github.com/daunroda/daunroda-app')">
           <font-awesome-icon icon="fa-brands fa-github" />
           GitHub
         </a>
-        <br />
-        {{ version }}
+        and is licensed under
+        <a @click="open('https://choosealicense.com/licenses/mit/')">MIT</a>
+        license.
       </p>
       <a @click="open('https://bulma.io')">
         <img
