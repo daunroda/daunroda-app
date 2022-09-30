@@ -33,6 +33,7 @@ OR
   * Clone this repository
   * Run the following commands:
   * `corepack enable`
+  * `yarn install`
   * `yarn dev` to run Daunroda without compiling or `yarn build` to build an installer
 
 ### Credits 
