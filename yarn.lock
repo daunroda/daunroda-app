@@ -1672,7 +1672,7 @@ __metadata:
     "@vitejs/plugin-vue": ^3.1.0
     "@vue/eslint-config-prettier": ^7.0.0
     "@vue/eslint-config-typescript": ^11.0.2
-    daunroda: "https://github.com/daunroda/daunroda-app-package#7775c66116853de58d6a94a161cae137f878fe32"
+    daunroda: "https://github.com/daunroda/daunroda-app-package#20228f8d9c09736f93f5d3afcb8909522a6a9e0b"
     electron: ^20.3.0
     electron-builder: ^23.5.1
     electron-updater: ^5.2.1
@@ -1692,9 +1692,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"daunroda@https://github.com/daunroda/daunroda-app-package#7775c66116853de58d6a94a161cae137f878fe32":
+"daunroda@https://github.com/daunroda/daunroda-app-package#20228f8d9c09736f93f5d3afcb8909522a6a9e0b":
   version: 1.1.3
-  resolution: "daunroda@https://github.com/daunroda/daunroda-app-package.git#commit=7775c66116853de58d6a94a161cae137f878fe32"
+  resolution: "daunroda@https://github.com/daunroda/daunroda-app-package.git#commit=20228f8d9c09736f93f5d3afcb8909522a6a9e0b"
   dependencies:
     "@sapphire/stopwatch": ^1.4.1
     "@skyra/jaro-winkler": ^1.1.0
@@ -1705,7 +1705,7 @@ __metadata:
     undici: ^5.10.0
     youtubei.js: ^2.2.1
     ytdl-core: ^4.11.2
-  checksum: 7ed1514924d43ad8bca936057320072ee19eb8a3c0f1123b0be3454723a88b32b5fd87f3d5ee4a512cb050390a2ef2f153b6033aee11bc93bdc8a8e323d04547
+  checksum: e112fc2454486ad43626217929753974b7bfa67d98a254f1a7ac62569a66f1724f93d7061bbae279e91fd75f356da4496f23223a48fcd9746126da9dd5c5b34f
   languageName: node
   linkType: hard
 
