@@ -98,16 +98,25 @@ ipcMain.handle("showDialog", async () => {
   return filePaths[0];
 });
 
+let client: Daunroda;
+
 // Download
 ipcMain.handle("download", (e, config) => {
-  const client = new Daunroda(config);
+  client = new Daunroda(config);
 
   client.on("info", (info) => e.sender.send("info", info));
   client.on("debug", (debug) => e.sender.send("debug", debug));
   client.on("error", (error) => e.sender.send("error", error));
   client.on("progress", (prog) => e.sender.send("progress", prog));
+  client.on("downloadMaybe", (download) =>
+    e.sender.send("downloadMaybe", JSON.stringify(download))
+  );
 
   client.run().catch((err) => e.sender.send("error", err));
+});
+
+ipcMain.handle("downloadSingle", (e, download) => {
+  client.downloadSingle(JSON.parse(download));
 });
 
 ipcMain.handle("version", () => {

@@ -66,6 +66,35 @@
     </div>
   </div>
 
+  <div class="modal" :class="downloadMaybeQueue.length >= 1 ? 'is-active' : ''">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <p class="has-text-white">
+        Found {{ downloadMaybeQueue[0]?.res.name }} on YouTube (named
+        {{
+          downloadMaybeQueue[0]?.res.name ??
+          downloadMaybeQueue[0]?.res.title ??
+          ""
+        }}) but it was rejected because of {{ downloadMaybeQueue[0]?.reason }}.
+        Do you want to download
+        <a
+          @click="
+            open(
+              `https://music.youtube.com/watch?v=${downloadMaybeQueue[0]?.res.id}`
+            )
+          "
+        >
+          this
+        </a>
+        anyway?
+      </p>
+    </div>
+    <button class="button is-success" @click="downloadSingle()">
+      Download
+    </button>
+    <button class="button" @click="downloadMaybeQueue.shift()">Cancel</button>
+  </div>
+
   <div :hidden="Array.from(progress.values()).some((prog) => !prog.finished)">
     <router-link to="/" class="button is-primary">
       <font-awesome-icon class="icon" icon="fa-solid fa-house" />
@@ -78,7 +107,7 @@
 /// <reference types="spotify-api" />
 
 import { defineComponent } from "@vue/runtime-core";
-import { ipcRenderer } from "electron";
+import { ipcRenderer, shell } from "electron";
 import { inspect } from "util";
 import type { StoreConfig } from "../store.js";
 import { loadConfig, store } from "../store.js";
@@ -94,6 +123,10 @@ export default defineComponent({
       { downloaded: number; total: number; finished: boolean }
     >;
     info: string;
+    downloadMaybeQueue: {
+      res: { name?: string; id?: string; title?: string };
+      reason: string;
+    }[];
   } {
     return {
       playlists: [],
@@ -101,6 +134,7 @@ export default defineComponent({
       download: [],
       progress: new Map(),
       info: "",
+      downloadMaybeQueue: [],
     };
   },
   methods: {
@@ -114,6 +148,13 @@ export default defineComponent({
       this.info = "";
 
       ipcRenderer.invoke("download", config);
+    },
+    async downloadSingle() {
+      const download = this.downloadMaybeQueue.shift();
+      ipcRenderer.invoke("downloadSingle", JSON.stringify(download));
+    },
+    open(url: string) {
+      shell.openExternal(url);
     },
     selectAll() {
       this.download = this.playlists.map((playlist) => playlist.id);
@@ -133,9 +174,14 @@ export default defineComponent({
         finished: prog.finished,
       })
     );
+
     ipcRenderer.on("info", (e, info) => (this.info += `\n${info}`));
     ipcRenderer.on("error", (e, error) => (this.info += `\n${inspect(error)}`));
     ipcRenderer.on("debug", (e, debug) => console.log(debug));
+    ipcRenderer.on("downloadMaybe", (e, download) => {
+      download = JSON.parse(download);
+      this.downloadMaybeQueue.push(download);
+    });
   },
 });
 
