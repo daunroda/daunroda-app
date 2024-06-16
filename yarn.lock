@@ -1691,7 +1691,7 @@ __metadata:
     prettier: ^2.7.1
     spotify-web-api-node: ^5.0.2
     typescript: ^4.8.4
-    vite: ^3.2.8
+    vite: ^3.2.10
     vite-plugin-electron: ^0.9.3
     vue: ^3.2.40
     vue-router: 4.1.5
@@ -4975,9 +4975,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^3.2.8":
-  version: 3.2.8
-  resolution: "vite@npm:3.2.8"
+"vite@npm:^3.2.10":
+  version: 3.2.10
+  resolution: "vite@npm:3.2.10"
   dependencies:
     esbuild: ^0.15.9
     fsevents: ~2.3.2
@@ -5009,7 +5009,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: de7b44f68fbe7a54caf1a63eab01c0c7f6a1a5d88fc59f0d27fb40971d3b15247d38d36c8e7a694733ae208e0c4f0cddf1d57441b9b08c496175e983ec01740d
+  checksum: 6772a0fce62d56d2d4480439a63a43a33ccb111aba981633947c7991bbba5414ad54711d835af464f851a176c3b0a93d8b07952d52fa52bcd5507220f83df443
   languageName: node
   linkType: hard
 
