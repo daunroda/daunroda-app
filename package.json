@@ -14,7 +14,7 @@
   "dependencies": {
     "@sapphire/fetch": "^2.4.1",
     "daunroda": "https://github.com/daunroda/daunroda-app-package#20228f8d9c09736f93f5d3afcb8909522a6a9e0b",
-    "electron-updater": "^5.2.1",
+    "electron-updater": "^6.3.0",
     "fluent-ffmpeg": "https://github.com/alexthemaster/node-fluent-ffmpeg.git#commit=86418dd02dfb9554ce2becaafda20c66447b0d84",
     "spotify-web-api-node": "^5.0.2"
   },
