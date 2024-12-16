@@ -2713,7 +2713,7 @@ __metadata:
   dependencies:
     async: ">=0.2.9"
     which: ^1.1.1
-  checksum: 76f401b4b59de667e9592e6616ac28a584451c6d8861dd62738ecbfe4fcd84268257cc52021eda1efcd053526726596c2db95225c4bb23fe9c5756b6a5b7324e
+  checksum: f716e26cf61507b8b932216e7cd53da325871d25c08814548a38075e1662f23bf5b382f214517d248e8c21cf2be7d4b28d585934d41c750ef1ee14fcd34ab390
   languageName: node
   linkType: hard
 
@@ -3803,11 +3803,11 @@ __metadata:
   linkType: hard
 
 "nanoid@npm:^3.3.6":
-  version: 3.3.6
-  resolution: "nanoid@npm:3.3.6"
+  version: 3.3.8
+  resolution: "nanoid@npm:3.3.8"
   bin:
     nanoid: bin/nanoid.cjs
-  checksum: 7d0eda657002738aa5206107bd0580aead6c95c460ef1bdd0b1a87a9c7ae6277ac2e9b945306aaa5b32c6dcb7feaf462d0f552e7f8b5718abfc6ead5c94a71b3
+  checksum: dfe0adbc0c77e9655b550c333075f51bb28cfc7568afbf3237249904f9c86c9aaaed1f113f0fddddba75673ee31c758c30c43d4414f014a52a7a626efc5958c9
   languageName: node
   linkType: hard
 
